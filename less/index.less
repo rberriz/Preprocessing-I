@@ -49,11 +49,97 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
+ 
+@bodyfont: 'Montserrat', sans-serif;
+
+.flexcolumn {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.fancybox() {
+	width: 40%;
+	height: 200px;
+	background: linear-gradient(175deg, rgba(0,0,0,0) 95%, #8da389 95%), linear-gradient( 85deg, rgba(0,0,0,0) 95%, #8da389 95%), linear-gradient(175deg, rgba(0,0,0,0) 90%, #b4b07f 90%), linear-gradient( 85deg, rgba(0,0,0,0) 92%, #b4b07f 92%), linear-gradient(175deg, rgba(0,0,0,0) 85%, #c5a68e 85%), linear-gradient( 85deg, rgba(0,0,0,0) 89%, #c5a68e 89%), linear-gradient(175deg, rgba(0,0,0,0) 80%, #ba9499 80%), linear-gradient( 85deg, rgba(0,0,0,0) 86%, #ba9499 86%), linear-gradient(175deg, rgba(0,0,0,0) 75%, #9f8fa4 75%), linear-gradient( 85deg, rgba(0,0,0,0) 83%, #9f8fa4 83%), linear-gradient(175deg, rgba(0,0,0,0) 70%, #74a6ae 70%), linear-gradient( 85deg, rgba(0,0,0,0) 80%, #74a6ae 80%);
+}
+
 * {
     box-sizing: border-box;
 }
-
-html, body {
-    height: 100%;
+body {
+	width: 100%;
+	font-size: 62.5%;
 }
 
+a {
+	font-size: 1.8 rem;
+	font-family: @bodyfont;
+	color: black;
+}
+h1 {
+	font-size: 2.4rem;
+	font-family: 'Merriweather', serif; 
+}
+
+h2 {
+	font-size: 1.8rem;
+	font-family: @bodyfont;
+}
+
+p {
+	font-size: 2.4 rem;
+	font-family: @bodyfont;
+}
+
+.topHalf {
+	width:100%;
+	border: 2px solid black;
+	.flexcolumn;
+}
+
+.photoOfMe {
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px auto;
+
+}
+.beautiful {
+	width: 100%;
+	box-shadow: 80px 80px 100px #aaa;
+}
+
+.buttons a {
+	font-size: 1.5rem;
+	text-decoration: none;
+	padding: 0px 25px;
+}
+
+.words {
+	padding-bottom: 25px;
+	.flexcolumn
+}
+
+.words h1 {
+	padding-bottom: 35px;
+}
+
+
+.content {
+	.flexcolumn;
+	padding-top: 35px;
+}
+
+
+.content h2 {
+	margin-bottom: 50px;
+}
+
+.bottomHalf {
+	.flexcolumn;
+	padding-bottom: 35px;
+}
